@@ -54,14 +54,15 @@ listener = #path to NativeListener (provided in /spf-interfaces/NativeListener.j
 ```
 Selecting a run configuration from the "Run" menu in Eclipse. In particular you should select: "run-JPF-symbc" to run Symbolic PathFinder on your example. Example of a Java project containing ARM native library are provided in /spf-interfaces.
 
-CORANA-API can also be built manually as described belows.
+CORANA-API can also be built manually from https://github.com/vananhnt/corana. 
 
-# Corana/API
+# CORANA/API
 
+From this point, we describe the installation of CORANA/API.
 The API stub is an underapproximation of a system function call by spawning its execution in the real Linux environment. 
 CORANA/API inputs an ARM binary file and outputs its CFG. The CFG is represented as `.dot` file, thus you can arbitrarily further plot it in any graphic or data structure format as you want.
 
-## Docker installation
+## Docker installation for CORANA/API
 Assuming you have Docker installed, simply run (required internet download):
 ```
 docker build -t corana .
@@ -78,7 +79,7 @@ java -Xss16m -Xmx10240m -jar corana_api.jar -execute samples/32caff26a4dfa373cd0
 More details on how to run Corana are presented in the later part. Corana will output the execution trace and a graph .dot file of the binary input. <br />
 **NOTE** If encounter MongoSocketOpenException error, please start the service by:
 ` service mongodb start ` or `mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork`
-## Manual Installation
+## Manual Installation for CORANA/API
 
 **Important note:** This installation is for Linux/MacOS only. For Windows, please take a look at the detailed instruction of each individual component.
 
@@ -153,21 +154,6 @@ java -Xss16m -Xmx10240m -jar corana_api.jar -execute samples/32caff26a4dfa373cd0
 If you want to specify an ARM variation, please append the variation name  (M0, M0_Plus, M3, M4, M7, M33) to the end of the command above. Otherwise, **Corana** runs with the general ARM configurations.
 
      java -Xss16m -Xmx10240m -jar corana_api.jar -execute /path/to/input/file M7
-
-## Experiments
-* To generate all the trace of malware samples in the experiments, run the prepared script by: 
-	`sudo chmod +x run_corana.sh; ./run_corana.sh`
-The detailed output traces of the malware samples will be put in /output folder.
-The .dot files which are contains the CFG are also generated and can be found in /samples.
-* The scripts to run Angr are in `resources/scripts`
-
-## Limitations and future works
-### Function pointer 
-A function pointer points to code, not data. We do not know how many cells needed to be copied into the emulated memory. Moreover, as the emulated memory in Java and actual memory of the system is not the same, the return address of the function pointer in JNA will point to a location in the actual system memory. Therefore, a method needed to be built to handle memory allocation and function fointer.
-### Loop invariant generation
-In the current implementation, we have to set an upper bound on the number of loop unrollings. Loop invariant can be used to handle loop. Dealing with loops is one of the main difficulties in symbolic execution, especially in the binary case.  Due to the lack of syntactic structure, “what is a loop” is not clear.  Automatically constructing inductive loop invariants is a classical problem in program analyses (e.g., Farkas’ Lemma , Craig interpolation), however, they mainly focus on high-level languages whose syntax of a loop statement is clearly defined.  The goal is to propose a loop invariant generation method targeting binary executables of typical loop structures in IoT malware (e.g., ARM Cortex-M-based malware). 
-### Control flow graph construction
-Currently, CORANA is able to generate execution traces of the analyzed binary samples. However, to correctly construct a CFG from the trace, we have to investigate how to define a model for the CFG, especially in the presence of typical obfuscations (e.g., self-modification).
 
 ## Contact
 Anh V. Vu - Project maintainer - [Email](mailto:anhvvcs@gmail.com)  
