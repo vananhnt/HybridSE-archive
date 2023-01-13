@@ -1,11 +1,11 @@
-# Corana-X
-**Corana** is an on-going project providing a Dynamic Symbolic Execution tool for ARM Cortex-M. It takes an ARM binary file as the input and outputs its precise Control Flow Graph (CFG) under the presence of obfuscations like indirect jumps. **Corana/API** extends the DSE tool CORANA for ARM by adding API stubs for Linux system functions. **CORANA-X** combines Spf and **Corana/API** for analyzing APK-style Java with ARM native, and further external calls in Linux.
+# HybridSE
+**Corana** is an on-going project providing a Dynamic Symbolic Execution tool for ARM Cortex-M. It takes an ARM binary file as the input and outputs its precise Control Flow Graph (CFG) under the presence of obfuscations like indirect jumps. **Corana/API** extends the DSE tool CORANA for ARM by adding API stubs for Linux system functions. **HybridSE** combines Spf and **Corana/API** for analyzing APK-style Java with ARM native, and further external calls in Linux.
 ## Artifact summary
 In previous work [Vu, 2019], a dynamic symbolic execution tool for ARM Cortex-M - CORANA was preliminarily built by extracting ARM formal semantics from natural language descriptions (https://github.com/anhvvcs/corana). 
 
-CORANA-X consider performing symbolic execution across heterogeneous platforms. Java can include shared native libraries as .so files, an object library in the ELF format. For ARM native code in Java, we combines two SE tools - Symbolic Pathfinder and CORANA/API. Symbolic Pathfinder are used to analyse Java class file. We prepare a custom listener for Symbolic Pathfiner which invoke CORANA/API at the point of ARM native code. 
+HybridSE consider performing symbolic execution across heterogeneous platforms. Java can include shared native libraries as .so files, an object library in the ELF format. For ARM native code in Java, we combines two SE tools - Symbolic Pathfinder and CORANA/API. Symbolic Pathfinder are used to analyse Java class file. We prepare a custom listener for Symbolic Pathfiner which invoke CORANA/API at the point of ARM native code. 
 
-- The tool CORANA-X and its dependencies
+- The tool HybridSE and its dependencies
 	* The custome listener for Symbolic Pathfinder are in /spf-interfaces
 	* Prerequisite tools for CORANA are provided in the sub folder `/dependencies` (Capstone, Z3, mongodb, binutils)
 	* Source code are in `/src` 
