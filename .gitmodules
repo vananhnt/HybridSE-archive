@@ -1,3 +1,6 @@
 [submodule "jpf-core"]
 	path = jpf-core
-	url = https://github.com/yannicnoller/jpf-core.git
+	url = https://github.com/vananhnt/jpf-core.git
+[submodule "jpf-symbc"]
+	path = jpf-symbc
+	url = git@github.com:vananhnt/jpf-symbc.git
