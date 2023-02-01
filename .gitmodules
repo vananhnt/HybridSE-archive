@@ -4,3 +4,6 @@
 [submodule "jpf-symbc"]
 	path = jpf-symbc
 	url = ../jpf-symbc.git
+[submodule "jpf-nhandler"]
+	path = jpf-nhandler
+	url = ../jpf-nhandler.git

@@ -1,4 +1,4 @@
-@using=jpf-nhandler
+#@using=jpf-nhandler
 @using=jpf-symbc
 
 target=com.angr.nativetest1.AndroidWrapper
