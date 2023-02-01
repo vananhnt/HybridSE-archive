@@ -1,0 +1,29 @@
+@using=jpf-nhandler
+@using=jpf-symbc
+
+target=com.angr.nativetest1.AndroidWrapper
+classpath=\
+	/home/va/eclipse-workspace/AndroidJNI/src;\
+
+native_classpath =\
+	/home/va/eclipse-workspace/AndroidJNI/src;\
+
+sourcepath=/home/va/eclipse-workspace/AndroidJNI/src
+
+#nhandler.delegateUnhandledNative = true
+#nhandler.spec.skip = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,android.os.Bundle.*
+nhandler.spec.delegate = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,android.os.Bundle.*
+nhandler.clean = false
+
+symbolic.method = ccom.c101421042723.ui.MyApplication.onCreate()
+
+symbolic.dp=choco
+#vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+symbolic.debug=true
+#symbolic.min_int=-100
+#symbolic.max_int=100
+#vm.storage.class=nil
+
+############################### 4. Listener part #############################
+#listener+=,.symbc.NativeListener
+listener=.symbc.NativeListener

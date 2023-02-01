@@ -1,0 +1,38 @@
+@using=jpf-nhandler
+@using=jpf-symbc
+
+target=AndroidWrapper
+classpath=/home/va/Projects/workplace/with_so/towelroot/src
+native_classpath=/home/va/Projects/workplace/with_so/towelroot/src
+
+sourcepath=/home/va/Projects/workplace/with_so/towelroot/src
+librarypath=/home/va/Projects/workplace/with_so/towelroot/armeabi/libexploit.so
+output=/home/va/Projects/workplace/with_so/towelroot
+
+#report.console.file=/home/va/Projects/workplace/with_so/towelroot/result.txt
+
+#nhandler.delegateUnhandledNative = true
+
+nhandler.spec.skip = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,\
+	 android.app.Activity.*,android.content.pm.PackageManager.*,\
+	 org.apache.http.message.BasicNameValuePair.*,java.io.File.getAbsolutePath,\
+	 java.util.concurrent.locks.*,java.util.concurrent.locks.ReentrantLock.*,\
+	 java.util.logging.LogManager.*,java.nio.charset.Charset.*,java.lang.Throwable.*\
+	 at java.util.logging.Logger.*,org.apache.http.impl.client.DefaultHttpClient.*,\
+	 java.util.concurrent.locks.ReentrantLock.<init>, java.util.concurrent.locks.ReentrantLock.<init>()V,\
+	 org.apache.http.client.utils.URLEncodedUtils.*,org.apache.http.client.entity.UrlEncodedFormEntity.*,\
+	  org.apache.http.impl.client.AbstractHttpClient.*,org.apache.http.impl.client.BasicResponseHandler.*,\
+	  android.widget.TextView.*,android.view.View.*,android.util.Log.i,java.nio.ByteOrder.*,libcore.icu.NativeConverter.*
+
+symbolic.method = com.geohot.towelroot.TowelRoot.rootTheShit()
+
+symbolic.dp=choco
+vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+symbolic.debug=true
+symbolic.min_int=-100
+symbolic.max_int=100
+#vm.storage.class=nil
+
+############################### 4. Listener part #############################
+#listener+=,.symbc.NativeListener
+listener=.symbc.NativeListener

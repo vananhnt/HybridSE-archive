@@ -1,0 +1,44 @@
+@using=jpf-nhandler
+@using=jpf-symbc
+
+target=com.angr.nativetest1.AndroidWrapper
+classpath=\
+	/home/va/eclipse-workspace/AndroidJNI/src;\
+
+native_classpath =\
+	/home/va/eclipse-workspace/AndroidJNI/src;\
+
+sourcepath=/home/va/eclipse-workspace/AndroidJNI/src
+librarypath=/home/va/eclipse-workspace/AndroidJNI/src/libnative-lib.so
+
+output=/home/va/eclipse-workspace/AndroidJNI
+
+report.console.file=/home/va/eclipse-workspace/AndroidJNI/result.txt
+
+nhandler.delegateUnhandledNative = true
+nhandler.spec.skip = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,\
+	 android.app.Activity.*,android.content.Context.*, android.content.pm.PackageManager.*
+
+report.class=gov.nasa.jpf.report.Reporter
+report.publisher=console
+
+#report.console.show_steps=true
+#report.console.show_method=true
+#report.console.show_source=false
+
+symbolic.method = com.angr.nativetest1.MainActivity.onCreate(sym)
+
+symbolic.dp=choco
+#vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+symbolic.debug=true
+#symbolic.min_int=-100
+#symbolic.max_int=100
+#vm.storage.class=nil
+
+############################### 4. Listener part #############################
+#listener+=,.symbc.SymbolicListener
+listener=.symbc.NativeListener
+
+############################### 5. test part #############################
+
+test.report.console.finished=result

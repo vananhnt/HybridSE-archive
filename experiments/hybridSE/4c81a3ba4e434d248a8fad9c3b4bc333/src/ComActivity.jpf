@@ -1,0 +1,34 @@
+@using=jpf-nhandler
+@using=jpf-symbc
+
+target=com.kingroot.RushRoot.Util.AndroidWrapper
+classpath=\
+	/home/va/Projects/workplace/projects_1/4c81a3ba4e434d248a8fad9c3b4bc333/src;\
+
+native_classpath =\
+	/home/va/Projects/workplace/projects_1/4c81a3ba4e434d248a8fad9c3b4bc333/src;\
+
+sourcepath=/home/va/Projects/workplace/projects_1/4c81a3ba4e434d248a8fad9c3b4bc333/src
+librarypath=/home/va/Projects/workplace/projects_1/4c81a3ba4e434d248a8fad9c3b4bc333/armeabi/libkingroot-jni.so
+output=/home/va/Projects/workplace/projects_1/4c81a3ba4e434d248a8fad9c3b4bc333
+
+nhandler.delegateUnhandledNative = true
+nhandler.spec.skip = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,\
+	 android.app.Activity.*,android.content.Context.*, android.content.pm.PackageManager.*,\
+	 java.io.File.getAbsolutePath, libcore.io.OsConstants.*,libcore.io.Posix.*
+
+#nhandler.spec.delegate = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,android.os.Bundle.*
+nhandler.clean = false
+
+symbolic.method = com.kingroot.RushRoot.Util.StatTask.doInBackground(sym)
+
+symbolic.dp=choco
+#vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+symbolic.debug=true
+#symbolic.min_int=-100
+#symbolic.max_int=100
+#vm.storage.class=nil
+
+############################### 4. Listener part #############################
+#listener+=,.symbc.NativeListener
+listener=.symbc.NativeListener

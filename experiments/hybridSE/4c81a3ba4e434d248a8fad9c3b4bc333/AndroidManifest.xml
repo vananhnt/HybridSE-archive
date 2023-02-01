@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pj.ishuaji">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".SoftApplication">
+        <receiver android:name="framework.flash.FlashRomReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="pj.ishuaji.AlarmReceiver" android:process=":remote"/>
+        <activity android:name="pj.ishuaji.introduction.ActIntroduction" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="standard" android:name="pj.ishuaji.actSplash.ActSplash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="pj.ishuaji.actSplash.NetWorkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="pj.ishuaji.actSoftAndGame.ActSoft" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pj.ishuaji.actSoftAndGame.ActGame" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.ringtone.ActRingToneList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actFont.ActFont" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actFont.ActFontDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.ringtone.ActRingtoneDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.lagerPic.ActFullscreenGallery" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actStartPage.ActStartPage" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actStartPage.ActStartPageDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actApkDetail.ActApkDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.ActDownload" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.actLocalSoft.ActLocalSoft" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.actDowloadedSoft.ActDownloadedSoft" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.actDowloadedRom.ActDownloadedRom" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.actDowloadedGame.ActDownloadedGame" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.actDowloadedFont.ActDownloadedFont" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.ringtone.ActDownloadedRingtone" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.actDowloadedStartPage.ActDownloadedStartPage" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="pj.ishuaji.actDownload.fastinstall.ActFastInstall" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actSoftSearch.ActSearch" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actSoftSearch.actSoftSearchResult.ActSearchResult" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actSearchRom.ActSearchRom" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.actRomSearch.actSearchRomResult.ActSearchRomResult" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="pj.ishuaji.actSetting.ActSetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.romlist.ActRomlist" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.romlist.ActOtherDeviceRomlist" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.romDevList.ActDevList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.romFacList.ActFacList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="pj.ishuaji.romdetail.ActRomDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <receiver android:name="pj.ishuaji.ApkListener">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="pj.ishuaji.flash.ActFlash" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.ActBrushAbout" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.root.ActRootState1" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleInstance" android:multiprocess="true" android:name="pj.ishuaji.flash.root.ActRootState2" android:process=":root" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.root.ActRootPrepare" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.rom.ActFlashRomOption" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.rom.ActFlashRomSelectionLocal" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.rom.ActFlashRomSelectionOnline" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.rom.ActFlashRom" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.patch.ActFlashPatchOption" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.patch.ActFlashPatchSelectionLocal" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.patch.ActFlashPatchSelectionOnline" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.flash.patch.ActFlashPatch" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.ActTools" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.sysinfo.ActSysInfo" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.toolkit.ActFactoryResetPrepare" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.toolkit.ActFactoryReset" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.toolkit.ActToolkit" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActBackupSelection" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActRestoreSysOption" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActBackupSysOption" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActBackupSys" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActRestoreSys" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActBackupAndRestore" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActBackupPrivateOption" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActBackupPrivate" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActRestorePrivateOption" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.backupandrestore.ActRestorePrivate" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="pj.ishuaji.tools.battery.ActBattery" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name="pj.ishuaji.news.NewsReceiver"/>
+        <activity android:name="pj.ishuaji.pkg.ActFlashPkg" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pj.ishuaji.setting.advice.ActAdvice" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleInstance" android:name=".commucation.ActCommucation" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name=".commucation.GreenBeanCmdReceiver">
+            <intent-filter>
+                <action android:name="pj.ishuaji.action.GREENBEAN_CMD"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>

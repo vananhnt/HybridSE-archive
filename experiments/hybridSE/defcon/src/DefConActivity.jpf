@@ -1,0 +1,29 @@
+@using=jpf-symbc
+
+target=ooo.defcon2019.quals.veryandroidoso.SolverWrapper
+classpath=\
+	/home/va/eclipse-workspace/JNIDefcon/src;\
+
+native_classpath =\
+	/home/va/eclipse-workspace/JNIDefcon/src;\
+
+sourcepath=/home/va/eclipse-workspace/JNIDefcon/src
+librarypath=/home/va/eclipse-workspace/JNIDefcon/ooo.defcon2019.quals.veryandroidoso/lib/armeabi-v7a/libnative-lib.so
+output=/home/va/eclipse-workspace/JNIDefcon/ooo.defcon2019.quals.veryandroidoso
+
+nhandler.spec.skip = android.util.Log.*,android.os.SystemProperties.*,android.os.Handler.*,\
+	 android.app.Activity.*,android.content.Context.*, android.content.pm.PackageManager.*,\
+	 ooo.defcon2019.quals.veryandroidoso.Solver.getSecretNumber
+
+symbolic.method=ooo.defcon2019.quals.veryandroidoso.Solver.solve(sym#sym#sym#sym#sym#sym#sym#sym#sym)
+
+symbolic.dp=choco
+#vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+symbolic.debug=true
+#symbolic.min_int=-100
+#symbolic.max_int=100
+#vm.storage.class=nil
+
+############################### 4. Listener part #############################
+listener+=,.symbc.NativeListener
+#listener=.symbc.NativeListener	

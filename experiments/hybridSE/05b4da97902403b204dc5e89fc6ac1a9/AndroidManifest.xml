@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kingroot.RushRoot">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:finishOnTaskLaunch="true" android:label="@string/app_name" android:multiprocess="true" android:name=".Activity.RootPrepareActivity" android:process=":three" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/app_name" android:multiprocess="true" android:name=".Activity.RootReadyActivity" android:process=":three" android:screenOrientation="portrait"/>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/app_name" android:multiprocess="true" android:name=".Activity.RootRunningActivity" android:process=":three" android:screenOrientation="portrait"/>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleInstance" android:multiprocess="true" android:name=".Activity.RootRunning2Activity" android:process=":two" android:screenOrientation="portrait"/>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/app_name" android:multiprocess="true" android:name=".Activity.RootSuccessedActivity" android:process=":three" android:screenOrientation="portrait"/>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/app_name" android:multiprocess="true" android:name=".Activity.RootFailedActivity" android:process=":three" android:screenOrientation="portrait"/>
+        <receiver android:name="AlarmReceiver" android:process=":remote"/>
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

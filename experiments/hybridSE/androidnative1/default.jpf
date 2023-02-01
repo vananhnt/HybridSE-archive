@@ -1,0 +1,95 @@
+#--- dependencies on other JPF projects
+# @using statecomparator
+# @using jpf-android
+
+target=com.test.Main
+projectpath=../TestApp/TestJPF
+classpath=${projectpath}/bin/classes;
+peer_packages=test,gov.nasa.jpf.android,gov.nasa.jpf.vm,<model>,<default>
+
+
+#---- environment choices using AndroidVerify
+# all, random, first, last
+verify.choice = all
+# use special inputs for edit values
+verify.symb_input = false
+#verify.input.filename=/storage/sdcard/keepass/keepass.kdb
+
+
+#---- options used by RunJPFAndroid.java
+jpf-android.store_output = true
+jpf-android.excludeFromPreloading = com.android.Test
+# jpf-android.output = /tmp/results
+# vm.extra_startup_classes = 
+
+jpf-android.prefs = normal
+
+#----- input generation
+# Default strategy makes use of default parameters, dynamic of runtime values
+event.strategy = # heuristic, heuristic2, default, dynamic, script
+
+#event.script = test.es
+
+# use dynamic values in heuristic search
+event.heuristic.dynamic = false
+# backtrack list of unique events that have been seen
+event.heuristic.backtrack = false
+# number of times an event can be seen
+event.heuristic.count = 1
+
+# determines if events match in the tree although starting stateid differs
+event.tree.includeEnvironmentState = false
+
+# do not by fire BroadcastReceivers automatically 
+event.fire_br = true
+
+# exclude events from happening
+event.exclude = .*onKeyDown.*,.*back.*
+# event.include=
+
+# limits the length of event sequences
+event.max_depth = 20
+
+
+#----- search class
+# search.class = .search.heuristic.BFSHeuristic
+search.depth_limit = 1000
+search.multiple_errors = false
+
+
+#----- listeners
+# listener=gov.nasa.jpf.jvm.SearchStateListener
+# search.log.methods=true
+# search.log.cgs=true
+# search.log.states=true
+# search.log.threads=false
+
+# prints events and callback trace
+# listener=gov.nasa.jpf.jvm.AndroidAppStateListener;
+# listener=gov.nasa.jpf.jvm.CGListener;
+# listener=gov.nasa.jpf.listener.StateSpaceDot;
+
+
+#----- jpf
+# The serializer is used to serialize states and generate a hashcode for
+# state matching. The deafult serializer is the CFSerializer that filters
+# out marked variables. The OptimizedCFSerializer only adds loaded classes
+# to the loaded list if they have static non-final fields increasing state
+# matching. The DebugStateSet is used to print out states to the tmp folder
+# for manual inspection and comparison.
+vm.serializer.class = gov.nasa.jpf.vm.serialize.OptimizedCFSerializer
+# vm.storage.class = gov.nasa.jpf.vm.DebugJenkinsStateSet
+# filter.ignoreFields = 
+
+# The AndroidSyncPolicy schedules all threads before continuing the with the
+# main thread that has a lower priority. Random scheduling can be achieved by
+# using the RandomScheduler in jpf-android. The main problem is that in this
+# case the main thread may state match before the other thread has completed. 
+vm.scheduler.sync.class = gov.nasa.jpf.vm.AndroidSyncPolicy
+vm.scheduler.sharedness.class = gov.nasa.jpf.vm.AndroidPathSharednessPolicy
+jpf-android.detectRace = false
+
+#----- logging
+log.level=info
+
+report.console.file=result.txt

@@ -1,0 +1,4436 @@
+[WARNING] unknown classpath element: /home/va/git/jpf-nhandler/build/jpf-nhandler-classes.jar
+Running Symbolic PathFinder ...
+symbolic.dp=choco
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.choco_time_bound=30000
+symbolic.max_pc_length=2147483647
+symbolic.max_pc_msec=0
+symbolic.bvlength=32
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+/home/va/git/corana-x/lib/ghidra/ghidra_10.1.4_PUBLIC/support/analyzeHeadless /home/va/git/corana-x/lib/GhidraScripts tempProject -import /home/va/eclipse-workspace/AndroidJNI/src/libnative-lib.so -scriptPath "/home/va/git/corana-x/lib/GhidraScripts/src/" -postScript Script.java -deleteProject
+======================================================
+enter method java.lang.Boolean.<clinit>
+0 invokeclinit java.lang.Boolean.<clinit>()V
+50 new java.lang.Boolean@bc
+50 dup
+50 iconst_1
+======================================================
+enter method java.lang.Boolean.<init>
+50 invokespecial java.lang.Boolean.<init>(Z)V
+87 aload_0
+======================================================
+enter method java.lang.Object.<init>
+87 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+88 aload_0
+88 iload_1
+88 putfield java.lang.Boolean@bc.value
+89 return [java.lang.Boolean.<init>(Z)V]
+50 putstatic java.lang.Boolean.TRUE
+56 new java.lang.Boolean@bd
+56 dup
+56 iconst_0
+======================================================
+enter method java.lang.Boolean.<init>
+56 invokespecial java.lang.Boolean.<init>(Z)V
+87 aload_0
+======================================================
+enter method java.lang.Object.<init>
+87 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+88 aload_0
+88 iload_1
+88 putfield java.lang.Boolean@bd.value
+89 return [java.lang.Boolean.<init>(Z)V]
+56 putstatic java.lang.Boolean.FALSE
+64 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+64 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+64 putstatic java.lang.Boolean.TYPE
+64 return [java.lang.Boolean.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Character.<clinit>
+0 invokeclinit java.lang.Character.<clinit>()V [native]
+-1 executenative JPF_java_lang_Character.$clinit____V
+-1 nativereturn [java.lang.Character.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Short.<clinit>
+0 invokeclinit java.lang.Short.<clinit>()V
+62 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+62 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+62 putstatic java.lang.Short.TYPE
+62 return [java.lang.Short.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Integer.<clinit>
+0 invokeclinit java.lang.Integer.<clinit>()V
+72 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+72 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+72 putstatic java.lang.Integer.TYPE
+77 bipush
+77 newarray char[36]
+77 dup
+77 iconst_0
+77 bipush
+77 castore
+77 dup
+77 iconst_1
+77 bipush
+77 castore
+77 dup
+77 iconst_2
+77 bipush
+77 castore
+77 dup
+77 iconst_3
+77 bipush
+77 castore
+77 dup
+77 iconst_4
+77 bipush
+77 castore
+77 dup
+77 iconst_5
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 dup
+77 bipush
+77 bipush
+77 castore
+77 putstatic java.lang.Integer.digits
+342 bipush
+342 newarray char[100]
+342 dup
+342 iconst_0
+342 bipush
+342 castore
+342 dup
+342 iconst_1
+342 bipush
+342 castore
+342 dup
+342 iconst_2
+342 bipush
+342 castore
+342 dup
+342 iconst_3
+342 bipush
+342 castore
+342 dup
+342 iconst_4
+342 bipush
+342 castore
+342 dup
+342 iconst_5
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 dup
+342 bipush
+342 bipush
+342 castore
+342 putstatic java.lang.Integer.DigitTens
+355 bipush
+355 newarray char[100]
+355 dup
+355 iconst_0
+355 bipush
+355 castore
+355 dup
+355 iconst_1
+355 bipush
+355 castore
+355 dup
+355 iconst_2
+355 bipush
+355 castore
+355 dup
+355 iconst_3
+355 bipush
+355 castore
+355 dup
+355 iconst_4
+355 bipush
+355 castore
+355 dup
+355 iconst_5
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 dup
+355 bipush
+355 bipush
+355 castore
+355 putstatic java.lang.Integer.DigitOnes
+467 bipush
+467 newarray int[10]
+467 dup
+467 iconst_0
+467 bipush
+467 iastore
+467 dup
+467 iconst_1
+467 bipush
+467 iastore
+467 dup
+467 iconst_2
+467 sipush
+467 iastore
+467 dup
+467 iconst_3
+467 sipush
+467 iastore
+467 dup
+467 iconst_4
+467 ldc
+467 iastore
+467 dup
+467 iconst_5
+467 ldc
+467 iastore
+467 dup
+467 bipush
+467 ldc
+467 iastore
+467 dup
+467 bipush
+467 ldc
+467 iastore
+467 dup
+467 bipush
+467 ldc
+467 iastore
+467 dup
+467 bipush
+467 ldc
+467 iastore
+467 putstatic java.lang.Integer.sizeTable
+467 return [java.lang.Integer.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Long.<clinit>
+0 invokeclinit java.lang.Long.<clinit>()V
+74 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+74 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+74 putstatic java.lang.Long.TYPE
+74 return [java.lang.Long.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Float.<clinit>
+0 invokeclinit java.lang.Float.<clinit>()V
+137 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+137 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+137 putstatic java.lang.Float.TYPE
+137 return [java.lang.Float.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Double.<clinit>
+0 invokeclinit java.lang.Double.<clinit>()V
+139 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+139 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+139 putstatic java.lang.Double.TYPE
+139 return [java.lang.Double.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Byte.<clinit>
+0 invokeclinit java.lang.Byte.<clinit>()V
+63 ldc
+======================================================
+enter method java.lang.Class.getPrimitiveClass
+63 invokestatic java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Class.getPrimitiveClass__Ljava_lang_String_2__Ljava_lang_Class_2
+-1 nativereturn [java.lang.Class.getPrimitiveClass(Ljava/lang/String;)Ljava/lang/Class;]
+63 putstatic java.lang.Byte.TYPE
+63 return [java.lang.Byte.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.String.<clinit>
+0 invokeclinit java.lang.String.<clinit>()V
+56 iconst_0
+56 anewarray
+56 putstatic java.lang.String.serialPersistentFields
+253 new java.lang.String$CaseInsensitiveComparator@da
+253 dup
+253 aconst_null
+======================================================
+enter method java.lang.String$CaseInsensitiveComparator.<init>
+253 invokespecial java.lang.String$CaseInsensitiveComparator.<init>(Ljava/lang/String$1;)V
+254 aload_0
+======================================================
+enter method java.lang.String$CaseInsensitiveComparator.<init>
+254 invokespecial java.lang.String$CaseInsensitiveComparator.<init>()V
+254 aload_0
+======================================================
+enter method java.lang.Object.<init>
+254 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+254 return [java.lang.String$CaseInsensitiveComparator.<init>()V]
+254 return [java.lang.String$CaseInsensitiveComparator.<init>(Ljava/lang/String$1;)V]
+253 putstatic java.lang.String.CASE_INSENSITIVE_ORDER
+253 return [java.lang.String.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.Thread$State.<clinit>
+0 invokeclinit java.lang.Thread$State.<clinit>()V
+78 new java.lang.Thread$State@db
+78 dup
+78 ldc
+78 iconst_0
+======================================================
+enter method java.lang.Thread$State.<init>
+78 invokespecial java.lang.Thread$State.<init>(Ljava/lang/String;I)V
+78 aload_0
+78 aload_1
+78 iload_2
+======================================================
+enter method java.lang.Enum.<init>
+78 invokespecial java.lang.Enum.<init>(Ljava/lang/String;I)V
+117 aload_0
+======================================================
+enter method java.lang.Object.<init>
+117 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+118 aload_0
+118 aload_1
+118 putfield java.lang.Thread$State@db.name
+119 aload_0
+119 iload_2
+119 putfield java.lang.Thread$State@db.ordinal
+120 return [java.lang.Enum.<init>(Ljava/lang/String;I)V]
+78 return [java.lang.Thread$State.<init>(Ljava/lang/String;I)V]
+78 putstatic java.lang.Thread$State.BLOCKED
+78 new java.lang.Thread$State@de
+78 dup
+78 ldc
+78 iconst_1
+======================================================
+enter method java.lang.Thread$State.<init>
+78 invokespecial java.lang.Thread$State.<init>(Ljava/lang/String;I)V
+78 aload_0
+78 aload_1
+78 iload_2
+======================================================
+enter method java.lang.Enum.<init>
+78 invokespecial java.lang.Enum.<init>(Ljava/lang/String;I)V
+117 aload_0
+======================================================
+enter method java.lang.Object.<init>
+117 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+118 aload_0
+118 aload_1
+118 putfield java.lang.Thread$State@de.name
+119 aload_0
+119 iload_2
+119 putfield java.lang.Thread$State@de.ordinal
+120 return [java.lang.Enum.<init>(Ljava/lang/String;I)V]
+78 return [java.lang.Thread$State.<init>(Ljava/lang/String;I)V]
+78 putstatic java.lang.Thread$State.NEW
+78 new java.lang.Thread$State@e1
+78 dup
+78 ldc
+78 iconst_2
+======================================================
+enter method java.lang.Thread$State.<init>
+78 invokespecial java.lang.Thread$State.<init>(Ljava/lang/String;I)V
+78 aload_0
+78 aload_1
+78 iload_2
+======================================================
+enter method java.lang.Enum.<init>
+78 invokespecial java.lang.Enum.<init>(Ljava/lang/String;I)V
+117 aload_0
+======================================================
+enter method java.lang.Object.<init>
+117 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+118 aload_0
+118 aload_1
+118 putfield java.lang.Thread$State@e1.name
+119 aload_0
+119 iload_2
+119 putfield java.lang.Thread$State@e1.ordinal
+120 return [java.lang.Enum.<init>(Ljava/lang/String;I)V]
+78 return [java.lang.Thread$State.<init>(Ljava/lang/String;I)V]
+78 putstatic java.lang.Thread$State.RUNNABLE
+78 new java.lang.Thread$State@e4
+78 dup
+78 ldc
+78 iconst_3
+======================================================
+enter method java.lang.Thread$State.<init>
+78 invokespecial java.lang.Thread$State.<init>(Ljava/lang/String;I)V
+78 aload_0
+78 aload_1
+78 iload_2
+======================================================
+enter method java.lang.Enum.<init>
+78 invokespecial java.lang.Enum.<init>(Ljava/lang/String;I)V
+117 aload_0
+======================================================
+enter method java.lang.Object.<init>
+117 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+118 aload_0
+118 aload_1
+118 putfield java.lang.Thread$State@e4.name
+119 aload_0
+119 iload_2
+119 putfield java.lang.Thread$State@e4.ordinal
+120 return [java.lang.Enum.<init>(Ljava/lang/String;I)V]
+78 return [java.lang.Thread$State.<init>(Ljava/lang/String;I)V]
+78 putstatic java.lang.Thread$State.TERMINATED
+78 new java.lang.Thread$State@e7
+78 dup
+78 ldc
+78 iconst_4
+======================================================
+enter method java.lang.Thread$State.<init>
+78 invokespecial java.lang.Thread$State.<init>(Ljava/lang/String;I)V
+78 aload_0
+78 aload_1
+78 iload_2
+======================================================
+enter method java.lang.Enum.<init>
+78 invokespecial java.lang.Enum.<init>(Ljava/lang/String;I)V
+117 aload_0
+======================================================
+enter method java.lang.Object.<init>
+117 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+118 aload_0
+118 aload_1
+118 putfield java.lang.Thread$State@e7.name
+119 aload_0
+119 iload_2
+119 putfield java.lang.Thread$State@e7.ordinal
+120 return [java.lang.Enum.<init>(Ljava/lang/String;I)V]
+78 return [java.lang.Thread$State.<init>(Ljava/lang/String;I)V]
+78 putstatic java.lang.Thread$State.TIMED_WAITING
+78 new java.lang.Thread$State@ea
+78 dup
+78 ldc
+78 iconst_5
+======================================================
+enter method java.lang.Thread$State.<init>
+78 invokespecial java.lang.Thread$State.<init>(Ljava/lang/String;I)V
+78 aload_0
+78 aload_1
+78 iload_2
+======================================================
+enter method java.lang.Enum.<init>
+78 invokespecial java.lang.Enum.<init>(Ljava/lang/String;I)V
+117 aload_0
+======================================================
+enter method java.lang.Object.<init>
+117 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+118 aload_0
+118 aload_1
+118 putfield java.lang.Thread$State@ea.name
+119 aload_0
+119 iload_2
+119 putfield java.lang.Thread$State@ea.ordinal
+120 return [java.lang.Enum.<init>(Ljava/lang/String;I)V]
+78 return [java.lang.Thread$State.<init>(Ljava/lang/String;I)V]
+78 putstatic java.lang.Thread$State.WAITING
+78 bipush
+78 anewarray
+78 dup
+78 iconst_0
+78 getstatic java.lang.Thread$State.BLOCKED
+78 aastore
+78 dup
+78 iconst_1
+78 getstatic java.lang.Thread$State.NEW
+78 aastore
+78 dup
+78 iconst_2
+78 getstatic java.lang.Thread$State.RUNNABLE
+78 aastore
+78 dup
+78 iconst_3
+78 getstatic java.lang.Thread$State.TERMINATED
+78 aastore
+78 dup
+78 iconst_4
+78 getstatic java.lang.Thread$State.TIMED_WAITING
+78 aastore
+78 dup
+78 iconst_5
+78 getstatic java.lang.Thread$State.WAITING
+78 aastore
+78 putstatic java.lang.Thread$State.$VALUES
+78 return [java.lang.Thread$State.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method java.lang.System.<clinit>
+0 invokeclinit java.lang.System.<clinit>()V
+======================================================
+enter method java.lang.System.createSystemOut
+43 invokestatic java.lang.System.createSystemOut()Ljava/io/PrintStream; [native]
+-1 executenative JPF_java_lang_System.createSystemOut____Ljava_io_PrintStream_2
+-1 nativereturn [java.lang.System.createSystemOut()Ljava/io/PrintStream;]
+43 putstatic java.lang.System.out
+======================================================
+enter method java.lang.System.createSystemErr
+44 invokestatic java.lang.System.createSystemErr()Ljava/io/PrintStream; [native]
+-1 executenative JPF_java_lang_System.createSystemErr____Ljava_io_PrintStream_2
+-1 nativereturn [java.lang.System.createSystemErr()Ljava/io/PrintStream;]
+44 putstatic java.lang.System.err
+46 new java.util.Properties
+======================================================
+enter method java.util.Hashtable.<clinit>
+======================================================
+enter method java.io.ObjectStreamField.<init>
+60 aload_0
+======================================================
+enter method java.lang.Object.<init>
+60 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+61 aload_1
+61 ifnonnull 18
+63 aload_2
+63 ifnonnull 32
+66 aload_0
+66 aload_1
+66 putfield java.io.ObjectStreamField@111.name
+67 aload_0
+67 new java.lang.ref.WeakReference@114
+67 dup
+67 aload_2
+======================================================
+enter method java.lang.ref.WeakReference.<init>
+67 invokespecial java.lang.ref.WeakReference.<init>(Ljava/lang/Object;)V
+25 aload_0
+25 aload_1
+======================================================
+enter method java.lang.ref.Reference.<init>
+25 invokespecial java.lang.ref.Reference.<init>(Ljava/lang/Object;)V
+39 aload_0
+======================================================
+enter method java.lang.Object.<init>
+39 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+40 aload_0
+40 aload_1
+40 putfield java.lang.ref.WeakReference@114.ref
+41 return [java.lang.ref.Reference.<init>(Ljava/lang/Object;)V]
+26 return [java.lang.ref.WeakReference.<init>(Ljava/lang/Object;)V]
+67 putfield java.io.ObjectStreamField@111.type
+68 return [java.io.ObjectStreamField.<init>(Ljava/lang/String;Ljava/lang/Class;)V]
+======================================================
+enter method java.io.ObjectStreamField.<init>
+60 aload_0
+======================================================
+enter method java.lang.Object.<init>
+60 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+61 aload_1
+61 ifnonnull 18
+63 aload_2
+63 ifnonnull 32
+66 aload_0
+66 aload_1
+66 putfield java.io.ObjectStreamField@115.name
+67 aload_0
+67 new java.lang.ref.WeakReference@118
+67 dup
+67 aload_2
+======================================================
+enter method java.lang.ref.WeakReference.<init>
+67 invokespecial java.lang.ref.WeakReference.<init>(Ljava/lang/Object;)V
+25 aload_0
+25 aload_1
+======================================================
+enter method java.lang.ref.Reference.<init>
+25 invokespecial java.lang.ref.Reference.<init>(Ljava/lang/Object;)V
+39 aload_0
+======================================================
+enter method java.lang.Object.<init>
+39 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+40 aload_0
+40 aload_1
+40 putfield java.lang.ref.WeakReference@118.ref
+41 return [java.lang.ref.Reference.<init>(Ljava/lang/Object;)V]
+26 return [java.lang.ref.WeakReference.<init>(Ljava/lang/Object;)V]
+67 putfield java.io.ObjectStreamField@115.type
+68 return [java.io.ObjectStreamField.<init>(Ljava/lang/String;Ljava/lang/Class;)V]
+46 new java.util.Properties@119
+46 dup
+======================================================
+enter method java.util.Properties.<init>
+46 invokespecial java.util.Properties.<init>()V
+======================================================
+enter method java.util.Hashtable.<init>
+======================================================
+enter method java.util.Dictionary.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+46 putstatic java.lang.System.properties
+======================================================
+enter method java.lang.System.getKeyValuePairs
+48 invokestatic java.lang.System.getKeyValuePairs()[Ljava/lang/String; [native]
+-1 executenative JPF_java_lang_System.getKeyValuePairs_____3Ljava_lang_String_2
+-1 nativereturn [java.lang.System.getKeyValuePairs()[Ljava/lang/String;]
+48 astore_0
+49 iconst_0
+49 istore_1
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.<clinit>
+======================================================
+enter method java.util.Collections$1.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+======================================================
+enter method java.util.Collections$2.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+======================================================
+enter method java.util.Collections$EmptyList.<init>
+======================================================
+enter method java.util.Collections$EmptyList.<init>
+======================================================
+enter method java.util.AbstractList.<init>
+======================================================
+enter method java.util.AbstractCollection.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+======================================================
+enter method java.util.Collections$EmptySet.<init>
+======================================================
+enter method java.util.Collections$EmptySet.<init>
+======================================================
+enter method java.util.AbstractSet.<init>
+======================================================
+enter method java.util.AbstractCollection.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+======================================================
+enter method java.util.Collections$EmptyMap.<init>
+======================================================
+enter method java.util.Collections$EmptyMap.<init>
+======================================================
+enter method java.util.AbstractMap.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable.rehash
+======================================================
+enter method java.util.Hashtable.doubleCapacity
+======================================================
+enter method java.util.Hashtable.makeTable
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable.rehash
+======================================================
+enter method java.util.Hashtable.doubleCapacity
+======================================================
+enter method java.util.Hashtable.makeTable
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable.rehash
+======================================================
+enter method java.util.Hashtable.doubleCapacity
+======================================================
+enter method java.util.Hashtable.makeTable
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable.rehash
+======================================================
+enter method java.util.Hashtable.doubleCapacity
+======================================================
+enter method java.util.Hashtable.makeTable
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable.rehash
+======================================================
+enter method java.util.Hashtable.doubleCapacity
+======================================================
+enter method java.util.Hashtable.makeTable
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable.rehash
+======================================================
+enter method java.util.Hashtable.doubleCapacity
+======================================================
+enter method java.util.Hashtable.makeTable
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+50 aload_0
+50 iload_1
+50 aaload
+50 astore_2
+51 aload_0
+51 iload_1
+51 iconst_1
+51 iadd
+51 aaload
+51 astore_3
+53 aload_2
+53 ifnull 67
+53 aload_3
+53 ifnull 67
+54 getstatic java.lang.System.properties
+54 aload_0
+54 iload_1
+54 aaload
+54 aload_0
+54 iload_1
+54 iconst_1
+54 iadd
+54 aaload
+======================================================
+enter method java.util.Hashtable.put
+54 invokevirtual java.util.Properties@119.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.lang.String.hashCode
+-1 executenative JPF_java_lang_String.hashCode____I
+-1 nativereturn [java.lang.String.hashCode()I]
+======================================================
+enter method java.util.Collections.secondaryHash
+======================================================
+enter method java.util.Hashtable$HashtableEntry.<init>
+======================================================
+enter method java.lang.Object.<init>
+27 return [java.lang.Object.<init>()V]
+54 pop
+49 iinc 1 2
+49 goto 28
+49 iload_1
+49 aload_0
+49 arraylength
+49 if_icmpge 73
+======================================================
+enter method java.lang.System.createJavaLangAccess
+61 invokestatic java.lang.System.createJavaLangAccess()Lsun/misc/JavaLangAccess;
+69 new java.lang.System$1@269
+69 dup
+======================================================
+enter method java.lang.System$1.<init>
+69 invokespecial java.lang.System$1.<init>()V
+69 aload_0
+======================================================
+enter method java.lang.Object.<init>
+69 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+69 return [java.lang.System$1.<init>()V]
+69 areturn [java.lang.System.createJavaLangAccess()Lsun/misc/JavaLangAccess;]
+61 invokestatic sun.misc.SharedSecrets.setJavaLangAccess(Lsun/misc/JavaLangAccess;)V
+======================================================
+enter method sun.misc.SharedSecrets.<clinit>
+0 invokeclinit sun.misc.SharedSecrets.<clinit>()V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.ensureClassInitialized(Ljava/lang/Class;)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getBoolean(Ljava/lang/Object;J)Z
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getBooleanVolatile(Ljava/lang/Object;J)Z
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putBoolean(Ljava/lang/Object;JZ)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putBooleanVolatile(Ljava/lang/Object;JZ)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getByte(Ljava/lang/Object;J)B
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getByteVolatile(Ljava/lang/Object;J)B
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putByte(Ljava/lang/Object;JB)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putByteVolatile(Ljava/lang/Object;JB)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getChar(Ljava/lang/Object;J)C
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getCharVolatile(Ljava/lang/Object;J)C
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putChar(Ljava/lang/Object;JC)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putCharVolatile(Ljava/lang/Object;JC)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getShort(Ljava/lang/Object;J)S
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getShortVolatile(Ljava/lang/Object;J)S
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putShort(Ljava/lang/Object;JS)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putShortVolatile(Ljava/lang/Object;JS)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getFloat(Ljava/lang/Object;J)F
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getFloatVolatile(Ljava/lang/Object;J)F
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putFloat(Ljava/lang/Object;JF)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putFloatVolatile(Ljava/lang/Object;JF)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getDouble(Ljava/lang/Object;J)D
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getDoubleVolatile(Ljava/lang/Object;J)D
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putDouble(Ljava/lang/Object;JD)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putDoubleVolatile(Ljava/lang/Object;JD)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.allocateMemory(J)J
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.freeMemory(J)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getByte(J)B
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putByte(JB)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getChar(J)C
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putChar(JC)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getInt(J)I
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putInt(JI)V
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.getLong(J)J
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.fieldOffset(Ljava/lang/reflect/Field;)I
+[WARNING] orphan NativePeer method: sun.misc.Unsafe.putLong(JJ)V
+50 invokestatic sun.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe; [native]
+======================================================
+enter method sun.misc.Unsafe.<clinit>
+0 invokeclinit sun.misc.Unsafe.<clinit>()V
+31 new sun.misc.Unsafe@270
+31 dup
+======================================================
+enter method sun.misc.Unsafe.<init>
+31 invokespecial sun.misc.Unsafe.<init>()V
+38 aload_0
+======================================================
+enter method java.lang.Object.<init>
+38 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+38 return [sun.misc.Unsafe.<init>()V]
+31 putstatic sun.misc.Unsafe.THE_ONE
+33 getstatic sun.misc.Unsafe.THE_ONE
+33 putstatic sun.misc.Unsafe.theUnsafe
+33 return [sun.misc.Unsafe.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method sun.misc.Unsafe.getUnsafe
+50 invokestatic sun.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe; [native]
+-1 executenative JPF_sun_misc_Unsafe.getUnsafe____Lsun_misc_Unsafe_2
+-1 nativereturn [sun.misc.Unsafe.getUnsafe()Lsun/misc/Unsafe;]
+50 putstatic sun.misc.SharedSecrets.unsafe
+50 return [sun.misc.SharedSecrets.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method sun.misc.SharedSecrets.setJavaLangAccess
+61 invokestatic sun.misc.SharedSecrets.setJavaLangAccess(Lsun/misc/JavaLangAccess;)V
+69 aload_0
+69 putstatic sun.misc.SharedSecrets.javaLangAccess
+70 return [sun.misc.SharedSecrets.setJavaLangAccess(Lsun/misc/JavaLangAccess;)V]
+66 return [java.lang.System.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method com.angr.nativetest1.AndroidWrapper.main
+0 invokestatic com.angr.nativetest1.AndroidWrapper.main([Ljava/lang/String;)V
+13 new com.angr.nativetest1.AndroidWrapper@271
+13 dup
+======================================================
+enter method com.angr.nativetest1.AndroidWrapper.<init>
+13 invokespecial com.angr.nativetest1.AndroidWrapper.<init>()V
+5 aload_0
+======================================================
+enter method java.lang.Object.<init>
+5 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+5 return [com.angr.nativetest1.AndroidWrapper.<init>()V]
+13 new android.os.Bundle
+======================================================
+enter method android.os.Bundle.<clinit>
+0 invokeclinit android.os.Bundle.<clinit>()V
+40 new android.os.Bundle@27a
+40 dup
+======================================================
+enter method android.os.Bundle.<init>
+40 invokespecial android.os.Bundle.<init>()V
+68 aload_0
+======================================================
+enter method java.lang.Object.<init>
+68 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+47 aload_0
+47 aconst_null
+47 putfield android.os.Bundle@27a.mMap
+54 aload_0
+54 aconst_null
+54 putfield android.os.Bundle@27a.mParcelledData
+56 aload_0
+56 iconst_0
+56 putfield android.os.Bundle@27a.mHasFds
+57 aload_0
+57 iconst_1
+57 putfield android.os.Bundle@27a.mFdsKnown
+58 aload_0
+58 iconst_1
+58 putfield android.os.Bundle@27a.mAllowFds
+69 aload_0
+69 new android.util.ArrayMap
+======================================================
+enter method android.util.ArrayMap.<clinit>
+0 invokeclinit android.util.ArrayMap.<clinit>()V
+63 new android.util.ArrayMap@280
+63 dup
+63 iconst_1
+======================================================
+enter method android.util.ArrayMap.<init>
+63 invokespecial android.util.ArrayMap.<init>(Z)V
+255 aload_0
+======================================================
+enter method java.lang.Object.<init>
+255 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+256 aload_0
+256 getstatic android.util.ArrayMap.EMPTY_IMMUTABLE_INTS
+256 putfield android.util.ArrayMap@280.mHashes
+257 aload_0
+257 getstatic android.util.ContainerHelpers.EMPTY_OBJECTS
+======================================================
+enter method android.util.ContainerHelpers.<clinit>
+0 invokeclinit android.util.ContainerHelpers.<clinit>()V
+20 iconst_0
+20 newarray boolean[0]
+20 putstatic android.util.ContainerHelpers.EMPTY_BOOLEANS
+21 iconst_0
+21 newarray int[0]
+21 putstatic android.util.ContainerHelpers.EMPTY_INTS
+22 iconst_0
+22 newarray long[0]
+22 putstatic android.util.ContainerHelpers.EMPTY_LONGS
+23 iconst_0
+23 anewarray
+23 putstatic android.util.ContainerHelpers.EMPTY_OBJECTS
+23 return [android.util.ContainerHelpers.<clinit>()V]
+1 directcallreturn
+257 getstatic android.util.ContainerHelpers.EMPTY_OBJECTS
+257 putfield android.util.ArrayMap@280.mArray
+258 aload_0
+258 iconst_0
+258 putfield android.util.ArrayMap@280.mSize
+259 return [android.util.ArrayMap.<init>(Z)V]
+63 putstatic android.util.ArrayMap.EMPTY
+79 iconst_0
+79 newarray int[0]
+79 putstatic android.util.ArrayMap.EMPTY_IMMUTABLE_INTS
+79 return [android.util.ArrayMap.<clinit>()V]
+1 directcallreturn
+69 new android.util.ArrayMap@28c
+69 dup
+======================================================
+enter method android.util.ArrayMap.<init>
+69 invokespecial android.util.ArrayMap.<init>()V
+236 aload_0
+======================================================
+enter method java.lang.Object.<init>
+236 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+237 aload_0
+237 getstatic android.util.ContainerHelpers.EMPTY_INTS
+237 putfield android.util.ArrayMap@28c.mHashes
+238 aload_0
+238 getstatic android.util.ContainerHelpers.EMPTY_OBJECTS
+238 putfield android.util.ArrayMap@28c.mArray
+239 aload_0
+239 iconst_0
+239 putfield android.util.ArrayMap@28c.mSize
+240 return [android.util.ArrayMap.<init>()V]
+69 putfield android.os.Bundle@27a.mMap
+70 aload_0
+70 aload_0
+======================================================
+enter method java.lang.Object.getClass
+70 invokevirtual android.os.Bundle@27a.getClass()Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Object.getClass____Ljava_lang_Class_2
+-1 nativereturn [java.lang.Object.getClass()Ljava/lang/Class;]
+======================================================
+enter method java.lang.Class.getClassLoader
+70 invokevirtual java.lang.Class@275.getClassLoader()Ljava/lang/ClassLoader;
+271 aload_0
+271 getfield java.lang.Class@275.classLoader
+271 areturn [java.lang.Class.getClassLoader()Ljava/lang/ClassLoader;]
+70 putfield android.os.Bundle@27a.mClassLoader
+71 return [android.os.Bundle.<init>()V]
+40 putstatic android.os.Bundle.EMPTY
+41 getstatic android.os.Bundle.EMPTY
+41 getstatic android.util.ArrayMap.EMPTY
+41 putfield android.os.Bundle@27a.mMap
+1624 new android.os.Bundle$1@293
+1624 dup
+======================================================
+enter method android.os.Bundle$1.<init>
+1624 invokespecial android.os.Bundle$1.<init>()V
+1625 aload_0
+======================================================
+enter method java.lang.Object.<init>
+1625 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+1625 return [android.os.Bundle$1.<init>()V]
+1624 putstatic android.os.Bundle.CREATOR
+1624 return [android.os.Bundle.<clinit>()V]
+1 directcallreturn
+13 new android.os.Bundle@294
+13 dup
+======================================================
+enter method android.os.Bundle.<init>
+13 invokespecial android.os.Bundle.<init>()V
+68 aload_0
+======================================================
+enter method java.lang.Object.<init>
+68 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+47 aload_0
+47 aconst_null
+47 putfield android.os.Bundle@294.mMap
+54 aload_0
+54 aconst_null
+54 putfield android.os.Bundle@294.mParcelledData
+56 aload_0
+56 iconst_0
+56 putfield android.os.Bundle@294.mHasFds
+57 aload_0
+57 iconst_1
+57 putfield android.os.Bundle@294.mFdsKnown
+58 aload_0
+58 iconst_1
+58 putfield android.os.Bundle@294.mAllowFds
+69 aload_0
+69 new android.util.ArrayMap@295
+69 dup
+======================================================
+enter method android.util.ArrayMap.<init>
+69 invokespecial android.util.ArrayMap.<init>()V
+236 aload_0
+======================================================
+enter method java.lang.Object.<init>
+236 invokespecial java.lang.Object.<init>()V
+27 return [java.lang.Object.<init>()V]
+237 aload_0
+237 getstatic android.util.ContainerHelpers.EMPTY_INTS
+237 putfield android.util.ArrayMap@295.mHashes
+238 aload_0
+238 getstatic android.util.ContainerHelpers.EMPTY_OBJECTS
+238 putfield android.util.ArrayMap@295.mArray
+239 aload_0
+239 iconst_0
+239 putfield android.util.ArrayMap@295.mSize
+240 return [android.util.ArrayMap.<init>()V]
+69 putfield android.os.Bundle@294.mMap
+70 aload_0
+70 aload_0
+======================================================
+enter method java.lang.Object.getClass
+70 invokevirtual android.os.Bundle@294.getClass()Ljava/lang/Class; [native]
+-1 executenative JPF_java_lang_Object.getClass____Ljava_lang_Class_2
+-1 nativereturn [java.lang.Object.getClass()Ljava/lang/Class;]
+======================================================
+enter method java.lang.Class.getClassLoader
+70 invokevirtual java.lang.Class@275.getClassLoader()Ljava/lang/ClassLoader;
+271 aload_0
+271 getfield java.lang.Class@275.classLoader
+271 areturn [java.lang.Class.getClassLoader()Ljava/lang/ClassLoader;]
+70 putfield android.os.Bundle@294.mClassLoader
+71 return [android.os.Bundle.<init>()V]
+======================================================
+enter method com.angr.nativetest1.AndroidWrapper.onCreate
+13 invokevirtual com.angr.nativetest1.AndroidWrapper@271.onCreate(Landroid/os/Bundle;)V
+8 new com.angr.nativetest1.MainActivity
+======================================================
+enter method android.app.Activity.<clinit>
+0 invokeclinit android.app.Activity.<clinit>()V [native]
+* SKIPPING -> android.app.Activity.<clinit>
+-1 executenative OTF_JPF_android_app_Activity.$clinit____V
+-1 nativereturn [android.app.Activity.<clinit>()V]
+1 directcallreturn
+======================================================
+enter method com.angr.nativetest1.MainActivity.<clinit>
+0 invokeclinit com.angr.nativetest1.MainActivity.<clinit>()V
+0 ldc
+======================================================
+enter method java.lang.System.loadLibrary
+2 invokestatic java.lang.System.loadLibrary(Ljava/lang/String;)V
+206 return [java.lang.System.loadLibrary(Ljava/lang/String;)V]
+5 return [com.angr.nativetest1.MainActivity.<clinit>()V]
+1 directcallreturn
+8 new com.angr.nativetest1.MainActivity@32e
+8 dup
+======================================================
+enter method com.angr.nativetest1.MainActivity.<init>
+8 invokespecial com.angr.nativetest1.MainActivity.<init>()V
+8 aload_0
+======================================================
+enter method android.app.Activity.<init>
+8 invokespecial android.app.Activity.<init>()V
+* SKIPPING -> android.app.Activity.<init>
+-1 executenative OTF_JPF_android_app_Activity.$init____V
+-1 nativereturn [android.app.Activity.<init>()V]
+8 return [com.angr.nativetest1.MainActivity.<init>()V]
+8 aload_1
+======================================================
+enter method com.angr.nativetest1.MainActivity.onCreate
+8 invokevirtual com.angr.nativetest1.MainActivity@32e.onCreate(Landroid/os/Bundle;)V
+17 aload_0
+17 aload_1
+======================================================
+enter method android.app.Activity.onCreate
+17 invokespecial android.app.Activity.onCreate(Landroid/os/Bundle;)V
+* SKIPPING -> android.app.Activity.onCreate
+-1 executenative OTF_JPF_android_app_Activity.onCreate__Landroid_os_Bundle_2__V
+-1 nativereturn [android.app.Activity.onCreate(Landroid/os/Bundle;)V]
+17 aload_0
+17 ldc
+======================================================
+enter method android.app.Activity.setContentView
+17 invokevirtual com.angr.nativetest1.MainActivity@32e.setContentView(I)V [native]
+* SKIPPING -> android.app.Activity.setContentView
+-1 executenative OTF_JPF_android_app_Activity.setContentView__I__V
+-1 nativereturn [android.app.Activity.setContentView(I)V]
+17 aload_0
+17 ldc
+======================================================
+enter method android.app.Activity.findViewById
+17 invokevirtual com.angr.nativetest1.MainActivity@32e.findViewById(I)Landroid/view/View; [native]
+* SKIPPING -> android.app.Activity.findViewById
+-1 executenative OTF_JPF_android_app_Activity.findViewById__I__Landroid_view_View_2
+-1 nativereturn [android.app.Activity.findViewById(I)Landroid/view/View;]
+17 checkcast
+17 astore_2
+21 bipush
+21 istore_3
+22 bipush
+22 istore 4
+23 aload_0
+23 iload_3
+23 iload 4
+======================================================
+enter method com.angr.nativetest1.MainActivity.multiply
+23 invokevirtual com.angr.nativetest1.MainActivity@32e.multiply(II)I [native]
+JPF Argument: 814
+JPF Argument: 17
+JPF Argument: 13
++ Flags:
+	- N:0	n_SYM
+	- Z:0	z_SYM
+	- C:0	c_SYM
+	- V:0	v_SYM
+	- Q:0	q_SYM
+	- GE:0	ge_SYM+ Register (32-bit):
+	- R0	: 00101000001100111100110001000100 0x2833CC44 (674483268) | 2833cc44
+	- R1	: 00000000000000000000001100101110 0x0000032E (814) | 32e
+	- R2	: 00000000000000000000000000010001 0x00000011 (17) | #x00000011
+	- R3	: 00000000000000000000000000001101 0x0000000D (13) | d
+	- R4	: 00000000000000000000000000000000 0x00000000 (0) | r4_SYM
+	- R5	: 00000000000000000000000000000000 0x00000000 (0) | r5_SYM
+	- R6	: 00000000000000000000000000000000 0x00000000 (0) | r6_SYM
+	- R7	: 00000000000000000000000000000000 0x00000000 (0) | r7_SYM
+	- R8	: 00000000000000000000000000000000 0x00000000 (0) | r8_SYM
+	- R9	: 00000000000000000000000000000000 0x00000000 (0) | r9_SYM
+	- R11	: 00000000000000000000000000000000 0x00000000 (0) | r11_SYM
+	- LR	: 00000000000000000000000000000000 0x00000000 (0) | lr_SYM
+	- PC	: 00000000000000000000000000000000 0x00000000 (0) | pc
+	- SP	: 10111110111111111111110000001000 0xBEFFFC08 (-1090520056) | #xbefffc08
+	- R12	: 00000000000000000000000000000000 0x00000000 (0) | r12_SYM
+	- R10	: 00000000000000000000000000000000 0x00000000 (0) | r10_SYM
++ Stack:
++ Memory:
+Exploring multiply
+ + Analyzing /home/va/eclipse-workspace/AndroidJNI/src/libnative-lib.so ...
+-> Capstone disassembler elapsed: 464ms
+-> Exporting to .capstone-asm file ...
+Sep 05, 2022 8:28:39 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+Sep 05, 2022 8:28:39 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+Sep 05, 2022 8:28:39 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:1, serverValue:403}] to localhost:27017
+Sep 05, 2022 8:28:39 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 4]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=201617}
+Sep 05, 2022 8:28:39 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:2, serverValue:404}] to localhost:27017
+ + Parsing /home/va/eclipse-workspace/AndroidJNI/src/libnative-lib.so ...
+
+-> Executing 7efc : push {r4,r5,r7,lr} 
+-> Executing 7efe : add r7,sp,#8 
+-> Executing 7f00 : sub sp,#0x20 
+-> Executing 7f02 : mov ip,r3 
+-> Executing 7f04 : mov lr,r2 
+-> Executing 7f06 : mov r4,r1 
+-> Executing 7f08 : mov r5,r0 
+-> Executing 7f0a : str r0,[sp,#0x1c] 
+-> Executing 7f0c : str r1,[sp,#0x18] 
+-> Executing 7f0e : str r2,[sp,#0x14] 
+-> Executing 7f10 : str r3,[sp,#0x10] 
+-> Executing 7f12 : ldr r0,[sp,#0x14] 
+-> Executing 7f14 : ldr r1,[sp,#0x10] 
+-> Executing 7f16 : mul r0,r1,r0 
+-> Executing 7f18 : str.w ip,[sp,#0xc] 
+-> Executing 7f1c : str.w lr,[sp,#8] 
+-> Executing 7f20 : str r4,[sp,#4] 
+-> Executing 7f22 : str r5,[sp] 
+-> Executing 7f24 : add sp,#0x20 
+-> Executing 7f26 : pop {r4,r5,r7,pc} 
+-> Process ended. Time elapsed: 3473ms
+-> Time elapsed: 3473ms
++ Flags:
+	- N:0	(bvslt #x000000dd #x00000000)
+	- Z:0	(= #x000000dd #x00000000)
+	- C:0	(bvugt #x000000dd #xffffffff)
+	- V:0	(or (bvsgt #x000000dd #x7fffffff) (bvslt #x000000dd #x80000001))
+	- Q:0	q_SYM
+	- GE:0	ge_SYM+ Register (32-bit):
+	- R0	: 00000000000000000000000011011101 0x000000DD (221) | #x000000dd
+	- R1	: 00000000000000000000000000001101 0x0000000D (13) | #x0000000d
+	- R2	: 00000000000000000000000000010001 0x00000011 (17) | #x00000011
+	- R3	: 00000000000000000000000000001101 0x0000000D (13) | d
+	- R4	: 00000000000000000000001100101110 0x0000032E (814) | 32e
+	- R5	: 00101000001100111100110001000100 0x2833CC44 (674483268) | 2833cc44
+	- R6	: 00000000000000000000000000000000 0x00000000 (0) | r6_SYM
+	- R7	: 10111110111111111111110000000000 0xBEFFFC00 (-1090520064) | #xbefffc00
+	- R8	: 00000000000000000000000000000000 0x00000000 (0) | r8_SYM
+	- R9	: 00000000000000000000000000000000 0x00000000 (0) | r9_SYM
+	- R11	: 00000000000000000000000000000000 0x00000000 (0) | r11_SYM
+	- LR	: 00000000000000000000000000010001 0x00000011 (17) | #x00000011
+	- PC	: 00000000000000000111111100101000 0x00007F28 (32552) | #x00007f28
+	- SP	: 10111110111111111111101111111000 0xBEFFFBF8 (-1090520072) | #xbefffbf8
+	- R12	: 00000000000000000000000000001101 0x0000000D (13) | d
+	- R10	: 00000000000000000000000000000000 0x00000000 (0) | r10_SYM
++ Stack:
+	- 0	:00000000000000000000000000000000	lr_SYM
+	- 1	:00000000000000000000000000000000	r7_SYM
+	- 2	:00000000000000000000000000000000	r5_SYM
+	- 3	:00000000000000000000000000000000	r4_SYM
++ Memory:
+	- BitVec{sym='#xbefffbe8', val={3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 31}} : BitVec{sym='d', val={0, 2, 3}}
+	- BitVec{sym='#xbefffbec', val={2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 31}} : BitVec{sym='#x00000011', val={0, 4}}
+	- BitVec{sym='#xbefffbdc', val={2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 31}} : BitVec{sym='32e', val={1, 2, 3, 5, 8, 9}}
+	- BitVec{sym='#xbefffbf0', val={4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 31}} : BitVec{sym='32e', val={1, 2, 3, 5, 8, 9}}
+	- BitVec{sym='#xbefffbd8', val={3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 31}} : BitVec{sym='2833cc44', val={2, 6, 10, 11, 14, 15, 16, 17, 20, 21, 27, 29}}
+	- BitVec{sym='#xbefffbf4', val={2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 31}} : BitVec{sym='2833cc44', val={2, 6, 10, 11, 14, 15, 16, 17, 20, 21, 27, 29}}
+
+Return value:221
+-1 nativereturn [com.angr.nativetest1.MainActivity.multiply(II)I]
+23 istore 5
+24 aload_2
+24 iload 5
+======================================================
+enter method java.lang.String.valueOf
+24 invokestatic java.lang.String.valueOf(I)Ljava/lang/String; [native]
+-1 executenative JPF_java_lang_String.valueOf__I__Ljava_lang_String_2
+-1 nativereturn [java.lang.String.valueOf(I)Ljava/lang/String;]
