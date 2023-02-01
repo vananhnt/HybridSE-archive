@@ -7,3 +7,4 @@
 [submodule "jpf-nhandler"]
 	path = jpf-nhandler
 	url = ../jpf-nhandler.git
+	branch = chinmay
