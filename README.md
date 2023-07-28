@@ -1,5 +1,5 @@
 # HybridSE
-**Corana** is an on-going project providing a Dynamic Symbolic Execution tool for ARM Cortex-M. It takes an ARM binary file as the input and outputs its precise Control Flow Graph (CFG) under the presence of obfuscations like indirect jumps. **Corana/API** extends the DSE tool CORANA for ARM by adding API stubs for Linux system functions. **HybridSE** combines Spf and **Corana/API** for analyzing APK-style Java with ARM native, and further external calls in Linux.
+**HybridSE** combines Spf and **Corana/API** for analyzing APK-style Java with ARM native, and further external calls in Linux.
 ## Artifact summary
 In previous work [Vu, 2019], a dynamic symbolic execution tool for ARM Cortex-M - CORANA was preliminarily built by extracting ARM formal semantics from natural language descriptions.
 
